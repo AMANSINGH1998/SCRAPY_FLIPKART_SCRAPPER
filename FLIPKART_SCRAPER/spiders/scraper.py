@@ -10,6 +10,7 @@ class QuotesSpider(scrapy.Spider):
             'https://www.flipkart.com/search?q=mobiles&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_0_0&otracker1=AS_Query_TrendingAutoSuggest_0_0&as-pos=0&as-type=HISTORY&as-backfill=on&page=3',
             'https://www.flipkart.com/search?q=mobiles&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_0_0&otracker1=AS_Query_TrendingAutoSuggest_0_0&as-pos=0&as-type=HISTORY&as-backfill=on&page=5',
             'https://www.flipkart.com/search?q=mobiles&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_0_0&otracker1=AS_Query_TrendingAutoSuggest_0_0&as-pos=0&as-type=HISTORY&as-backfill=on&page=10',
+            'https://www.flipkart.com/search?q=mobiles&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_0_0&otracker1=AS_Query_TrendingAutoSuggest_0_0&as-pos=0&as-type=HISTORY&as-backfill=on&page=12',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
